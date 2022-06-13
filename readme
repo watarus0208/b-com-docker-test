@@ -1,0 +1,10 @@
+Dockerfileがある場所をカレントディレクトリにして下記を実行してビルドしてみて下さい。
+
+$ docker build . -t my-nvidia-cuda
+
+終わったら、下記を実行してみてください。
+
+$ docker run -it --rm --gpus all -v `pwd`/src:/code -p 8888:8888 --name my-jupyter my-nvidia-cuda sh -c 'jupyter-lab --allow-root --ip=*'
+
+JupyterNotebookが起動したら成功です。
+
