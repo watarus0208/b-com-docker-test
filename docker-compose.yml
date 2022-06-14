@@ -19,7 +19,7 @@ services:
     ports:
       - "127.0.0.1:8888:8888"
     volumes:
-      - $PWD:/code
+      - "/code"
     deploy:
       resources:
         reservations:
