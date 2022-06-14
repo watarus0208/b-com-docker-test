@@ -88,8 +88,9 @@ git clone origin master
 ## Docker composeの実行
 ※Dockerfileがあるディレクトリをカレントディレクトリにしてください。
 ```
-docker compose up
+docker compose up -d
 ```
+127.0.0.1:8888/labへアクセスしたら繋がります。
 ここでひとまずJupyternotebookが起動すれば成功です。
 
 ## コンテナサーバーへログイン
