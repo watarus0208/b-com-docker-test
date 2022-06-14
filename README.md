@@ -85,5 +85,6 @@ git remote rm orgin
 git remote add git@github.com:watarus0208/b-com-docker-test.git
 git remote
 ```
+６．リポジトリをクローン
 
-## 
+
