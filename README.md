@@ -82,5 +82,6 @@ git remote rm orgin
 ```
 ５．リポジトリを追加
 ```
-git remote add 
+git remote add git@github.com:watarus0208/b-com-docker-test.git
+git remote
 ```
