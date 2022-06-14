@@ -1,5 +1,3 @@
-## SSHポートフォワーディングをして
-
 ## Dockerのアンインストール（既にインストールしたものがある場合）
 １．インストールされているパッケージを特定する。
 ```
@@ -93,7 +91,13 @@ git clone origin master
 docker compose up
 ```
 ここでひとまずJupyternotebookが起動すれば成功です。
-Windowsのlocal端末から、WSL2で起動したjupyterサーバへアクセスするには、設定が必要。
+
+## コンテナサーバーへログイン
+```
+# コンテナ名を確認
+docker conpose ps
+docker container exec -it <コンテナ名> bash
+```
 
 ## その他
 * SSH接続（ポートフォワーディング）
